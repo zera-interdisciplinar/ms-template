@@ -3,7 +3,7 @@ import uvicorn
 
 app = FastAPI()
 
-
+#API de teste para deploy
 @app.get("/health")
 def health():
     return {"status": "ok"}

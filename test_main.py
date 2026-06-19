@@ -11,6 +11,6 @@ def test_health():
 
 
 def test_root():
-    teste = client.get("/")
-    assert teste.status_code == 200
-    assert teste.json() == {"message": "ms-template is running"}
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {"message": "ms-template is running"}

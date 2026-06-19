@@ -46,14 +46,3 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 10
           failureThreshold: 3
-        env:
-        - name: OPENAI_API_KEY
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: OPENAI_API_KEY
-        - name: MONGO_URI
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: MONGO_URI
